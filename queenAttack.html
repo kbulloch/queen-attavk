@@ -1,44 +1,43 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.11.2.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Queen Attavk</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Can the queen attavvk yo assshh?</h1>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Queen Attack knower</title>
+</head>
+<body class="container" style="background-color:#009999; color:white">
+  <h1>Can your queen attack??</h1>
 
-      <form id="coords">
-        <div class="form-group">
-          <label for="enemy_x">Enter [x] for your player:</label>
-          <input id="enemy_x" type="number">
-        </div>
-        <div class="form-group">
-          <label for="enemy_y">Enter [y] for your player:</label>
-          <input id="enemy_y" type="number">
-        </div>
-        <br>
-        <div class="form-group">
-          <label for="queen_x">Enter [x] for your Queen:</label>
-          <input id="queen_x" type="number">
-        </div>
-        <div class="form-group">
-          <label for="queen_y">Enter [y] for your Queen:</label>
-          <input id="queen_y" type="number">
-        </div>
-        <br>
-        <button type="submit" class="btn">Find out!</button>
-      </form>
-
-      <div id="result">
-        <p>The queen can<span class="not"></span> attavk yo playah.</p>
-      </div>
-
-
-
+  <form id="attack">
+    <div class="form-group">
+      <label for="queen_x">Queen X</label>
+      <input type="text" id="queen_x" class="form-control">
     </div>
-  </body>
+
+    <div class="form-group">
+      <label for="queen_y">Queen Y</label>
+      <input type="text" id="queen_y" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="enemy_x">Enemy X</label>
+      <input type="text" id="enemy_x" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="enemy_y">Enemy Y</label>
+      <input type="text" id="enemy_y" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-success">ATTACK~!!</button>
+  </form>
+
+  <div id="result">
+    <p>
+      <span class="result">Attack</span>
+    </p>
+  </div>
+
+</body>
 </html>
